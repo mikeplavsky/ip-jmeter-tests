@@ -27,6 +27,26 @@
             <stringProp name="Argument.value">120000</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="baseURL" elementType="Argument">
+            <stringProp name="Argument.name">baseURL</stringProp>
+            <stringProp name="Argument.value">http://sp2010dc:3141</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="user" elementType="Argument">
+            <stringProp name="Argument.name">user</stringProp>
+            <stringProp name="Argument.value">Administrator</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="domain" elementType="Argument">
+            <stringProp name="Argument.name">domain</stringProp>
+            <stringProp name="Argument.value">product</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="server" elementType="Argument">
+            <stringProp name="Argument.name">server</stringProp>
+            <stringProp name="Argument.value">sp2010dc</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </elementProp>
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
@@ -71,7 +91,7 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">sp2010dc</stringProp>
+            <stringProp name="HTTPSampler.domain">${server}</stringProp>
             <stringProp name="HTTPSampler.port">3141</stringProp>
             <stringProp name="HTTPSampler.connect_timeout">${socketTimeout}</stringProp>
             <stringProp name="HTTPSampler.response_timeout">${socketTimeout}</stringProp>
@@ -91,10 +111,10 @@
             <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
               <collectionProp name="AuthManager.auth_list">
                 <elementProp name="" elementType="Authorization">
-                  <stringProp name="Authorization.url">http://sp2010dc:3141</stringProp>
-                  <stringProp name="Authorization.username">Administrator</stringProp>
+                  <stringProp name="Authorization.url">${baseURL}</stringProp>
+                  <stringProp name="Authorization.username">${user}</stringProp>
                   <stringProp name="Authorization.password">1</stringProp>
-                  <stringProp name="Authorization.domain">product</stringProp>
+                  <stringProp name="Authorization.domain">${domain}</stringProp>
                   <stringProp name="Authorization.realm"></stringProp>
                 </elementProp>
               </collectionProp>
@@ -131,7 +151,7 @@
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments"/>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">sp2010dc</stringProp>
+            <stringProp name="HTTPSampler.domain">${server}</stringProp>
             <stringProp name="HTTPSampler.port">3141</stringProp>
             <stringProp name="HTTPSampler.connect_timeout">${socketTimeout}</stringProp>
             <stringProp name="HTTPSampler.response_timeout">${socketTimeout}</stringProp>
@@ -151,10 +171,10 @@
             <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
               <collectionProp name="AuthManager.auth_list">
                 <elementProp name="" elementType="Authorization">
-                  <stringProp name="Authorization.url">http://sp2010dc:3141</stringProp>
-                  <stringProp name="Authorization.username">Administrator</stringProp>
+                  <stringProp name="Authorization.url">${baseURL}</stringProp>
+                  <stringProp name="Authorization.username">${user}</stringProp>
                   <stringProp name="Authorization.password">1</stringProp>
-                  <stringProp name="Authorization.domain">product</stringProp>
+                  <stringProp name="Authorization.domain">${domain}</stringProp>
                   <stringProp name="Authorization.realm"></stringProp>
                 </elementProp>
               </collectionProp>
@@ -213,7 +233,7 @@
                 </elementProp>
               </collectionProp>
             </elementProp>
-            <stringProp name="HTTPSampler.domain">sp2010dc</stringProp>
+            <stringProp name="HTTPSampler.domain">${server}</stringProp>
             <stringProp name="HTTPSampler.port">3141</stringProp>
             <stringProp name="HTTPSampler.connect_timeout">${socketTimeout}</stringProp>
             <stringProp name="HTTPSampler.response_timeout">${socketTimeout}</stringProp>
@@ -233,10 +253,10 @@
             <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
               <collectionProp name="AuthManager.auth_list">
                 <elementProp name="" elementType="Authorization">
-                  <stringProp name="Authorization.url">http://sp2010dc:3141</stringProp>
-                  <stringProp name="Authorization.username">Administrator</stringProp>
+                  <stringProp name="Authorization.url">${baseURL}</stringProp>
+                  <stringProp name="Authorization.username">${user}</stringProp>
                   <stringProp name="Authorization.password">1</stringProp>
-                  <stringProp name="Authorization.domain">product</stringProp>
+                  <stringProp name="Authorization.domain">${domain}</stringProp>
                   <stringProp name="Authorization.realm"></stringProp>
                 </elementProp>
               </collectionProp>
